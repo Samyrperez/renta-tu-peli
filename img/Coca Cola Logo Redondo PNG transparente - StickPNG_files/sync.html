@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)chrome-error://chromewebdata/ -->
+<html dir="ltr" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+  <meta http-equiv="Content-Security-Policy" content="require-trusted-types-for &#39;script&#39;; trusted-types jstemplate;">
+  <title></title>
+  <style>/* Copyright 2017 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+a {
+  color: var(--link-color);
+}
+
+body {
+  --background-color: #fff;
+  --error-code-color: var(--google-gray-700);
+  --google-blue-100: rgb(210, 227, 252);
+  --google-blue-300: rgb(138, 180, 248);
+  --google-blue-600: rgb(26, 115, 232);
+  --google-blue-700: rgb(25, 103, 210);
+  --google-gray-100: rgb(241, 243, 244);
+  --google-gray-300: rgb(218, 220, 224);
+  --google-gray-500: rgb(154, 160, 166);
+  --google-gray-50: rgb(248, 249, 250);
+  --google-gray-600: rgb(128, 134, 139);
+  --google-gray-700: rgb(95, 99, 104);
+  --google-gray-800: rgb(60, 64, 67);
+  --google-gray-900: rgb(32, 33, 36);
+  --heading-color: var(--google-gray-900);
+  --link-color: rgb(88, 88, 88);
+  --popup-container-background-color: rgba(0,0,0,.65);
+  --primary-button-fill-color-active: var(--google-blue-700);
+  --primary-button-fill-color: var(--google-blue-600);
+  --primary-button-text-color: #fff;
+  --quiet-background-color: rgb(247, 247, 247);
+  --secondary-button-border-color: var(--google-gray-500);
+  --secondary-button-fill-color: #fff;
+  --secondary-button-hover-border-color: var(--google-gray-600);
+  --secondary-button-hover-fill-color: var(--google-gray-50);
+  --secondary-button-text-color: var(--google-gray-700);
+  --small-link-color: var(--google-gray-700);
+  --text-color: var(--google-gray-700);
+  background: var(--background-color);
+  color: var(--text-color);
+  word-wrap: break-word;
+}
+
+.nav-wrapper .secondary-button {
+  background: var(--secondary-button-fill-color);
+  border: 1px solid var(--secondary-button-border-color);
+  color: var(--secondary-button-text-color);
+  float: none;
+  margin: 0;
+  padding: 8px 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 125%;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-color: var(--google-gray-900);
+    --error-code-color: var(--google-gray-500);
+    --heading-color: var(--google-gray-500);
+    --link-color: var(--google-blue-300);
+    --primary-button-fill-color-active: rgb(129, 162, 208);
+    --primary-button-fill-color: var(--google-blue-300);
+    --primary-button-text-color: var(--google-gray-900);
+    --quiet-background-color: var(--background-color);
+    --secondary-button-border-color: var(--google-gray-700);
+    --secondary-button-fill-color: var(--google-gray-900);
+    --secondary-button-hover-fill-color: rgb(48, 51, 57);
+    --secondary-button-text-color: var(--google-blue-300);
+    --small-link-color: var(--google-blue-300);
+    --text-color: var(--google-gray-500);
+  }
+}
+</style>
+  <style>/* Copyright 2017 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+body {
+  background-color: var(--quiet-background-color);
+  margin: 0;
+}
+
+#details {
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 0.93333em;
+  height: auto;
+  line-height: 1.48em;
+  margin: 0;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#details.hidden {
+  display: block;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-bottom: 0;
+  transition: none;
+}
+
+#details-link {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-transform: none;
+}
+
+h1 {
+  color: var(--heading-color);
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 0.93333em;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 8px 0 8px;
+}
+
+.giant .icon {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.giant #details,
+.giant #main-message {
+  display: none;
+}
+
+.icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMCAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0tMi00aDI0djI0SC0yeiIvPjxwYXRoIGQ9Ik0xOCAwYzEgMCAyIDEgMiAydjEyYzAgMS0xIDItMiAySDJjLTEuMSAwLTItLjktMi0yVjJjMC0xIDEtMiAyLTJoMTZ6bS01LjYwOCAxMS40NmwxLjEwMy0xLjEwMi0yLjM3NC0yLjM3MkwxMy41IDUuNjA4bC0xLjEwMy0xLjEwMi0yLjM4IDIuMzc4TDcuNjMyIDQuNSA2LjUyOSA1LjYwMmwyLjM4NiAyLjM4NEw2LjUgMTAuMzk4IDcuNjAzIDExLjVsMi40MTQtMi40MTMgMi4zNzUgMi4zNzN6IiBmaWxsLW9wYWNpdHk9Ii4yIiBmaWxsPSIjMDAwIi8+PC9nPjwvc3ZnPg==);
+  background-position: center;
+  height: 20vh;
+  margin: 0 auto;
+  max-height: 48px;
+  max-width: 48px;
+  min-height: 18px;
+  min-width: 18px;
+  opacity: .54;
+  width: 20vh;
+}
+
+.heavy-ad .icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTS02MTgtNDQwSDc4MnYzNjAwSC02MTh6TTAgMGgyNHYyNEgweiIvPjxwYXRoIGQ9Ik0xOSAzSDVjLTEuMSAwLTIgLjktMiAydjE0YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjhoMTR2MTF6IiBmaWxsLW9wYWNpdHk9Ii4yIi8+PHBhdGggZD0iTTE0LjM5MiAxNi44MmwxLjEwMy0xLjEwMi0yLjM3NC0yLjM3MiAyLjM3OS0yLjM3OC0xLjEwMy0xLjEwMi0yLjM4IDIuMzc4TDkuNjMyIDkuODZsLTEuMTAzIDEuMTAyIDIuMzg2IDIuMzg0TDguNSAxNS43NThsMS4xMDMgMS4xMDIgMi40MTQtMi40MTN6IiBmaWxsLW9wYWNpdHk9Ii4yIi8+PC9zdmc+);
+}
+
+.interstitial-wrapper {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  line-height: 1.6em;
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 16px;
+  width: 100%;
+}
+
+#main-content {
+  align-self: auto;
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+@media (max-height:2em), (max-width:2em) {
+  .icon {
+    display: none;
+  }
+}
+
+@media (min-height:25em) and (min-width:37.5em),
+       (min-height:37.5em) and (min-width:25em) {
+  .interstitial-wrapper {
+    padding: 48px;
+  }
+}
+
+/* Views that don't fit the details text. */
+@media (max-height:11.25em) and (max-width:18.75em),
+       (max-height:18.75em) and (max-width:11.25em),
+       (max-height:5em), (max-width:5em) {
+  .icon {
+    max-height: 24px;
+    max-width: 24px;
+  }
+
+  #details,
+  #main-message {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode-available .icon {
+    filter: invert(1);
+  }
+}
+</style>
+  <script>// Copyright (c) 2013 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+/**
+ * @fileoverview Assertion support.
+ */
+
+/**
+ * Verify |condition| is truthy and return |condition| if so.
+ * @template T
+ * @param {T} condition A condition to check for truthiness.  Note that this
+ *     may be used to test whether a value is defined or not, and we don't want
+ *     to force a cast to Boolean.
+ * @param {string=} opt_message A message to show on failure.
+ * @return {T} A non-null |condition|.
+ * @closurePrimitive {asserts.truthy}
+ * @suppress {reportUnknownTypes} because T is not sufficiently constrained.
+ */
+/* #export */ function assert(condition, opt_message) {
+  if (!condition) {
+    let message = 'Assertion failed';
+    if (opt_message) {
+      message = message + ': ' + opt_message;
+    }
+    const error = new Error(message);
+    const global = function() {
+      const thisOrSelf = this || self;
+      /** @type {boolean} */
+      thisOrSelf.traceAssertionsForTesting;
+      return thisOrSelf;
+    }();
+    if (global.traceAssertionsForTesting) {
+      console.warn(error.stack);
+    }
+    throw error;
+  }
+  return condition;
+}
+
+/**
+ * Call this from places in the code that should never be reached.
+ *
+ * For example, handling all the values of enum with a switch() like this:
+ *
+ *   function getValueFromEnum(enum) {
+ *     switch (enum) {
+ *       case ENUM_FIRST_OF_TWO:
+ *         return first
+ *       case ENUM_LAST_OF_TWO:
+ *         return last;
+ *     }
+ *     assertNotReached();
+ *     return document;
+ *   }
+ *
+ * This code should only be hit in the case of serious programmer error or
+ * unexpected input.
+ *
+ * @param {string=} opt_message A message to show when this is hit.
+ * @closurePrimitive {asserts.fail}
+ */
+/* #export */ function assertNotReached(opt_message) {
+  assert(false, opt_message || 'Unreachable code hit');
+}
+
+/**
+ * @param {*} value The value to check.
+ * @param {function(new: T, ...)} type A user-defined constructor.
+ * @param {string=} opt_message A message to show when this is hit.
+ * @return {T}
+ * @template T
+ */
+/* #export */ function assertInstanceof(value, type, opt_message) {
+  // We don't use assert immediately here so that we avoid constructing an error
+  // message if we don't have to.
+  if (!(value instanceof type)) {
+    assertNotReached(
+        opt_message ||
+        'Value ' + value + ' is not a[n] ' + (type.name || typeof type));
+  }
+  return value;
+}
+</script>
+  <script>// Copyright (c) 2012 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// #import {assertInstanceof} from './assert.m.js';
+// #import {dispatchSimpleEvent} from './cr.m.js';
+
+/**
+ * Alias for document.getElementById. Found elements must be HTMLElements.
+ * @param {string} id The ID of the element to find.
+ * @return {HTMLElement} The found element or null if not found.
+ */
+/* #export */ function $(id) {
+  // Disable getElementById restriction here, since we are instructing other
+  // places to re-use the $() that is defined here.
+  // eslint-disable-next-line no-restricted-properties
+  const el = document.getElementById(id);
+  return el ? assertInstanceof(el, HTMLElement) : null;
+}
+
+// TODO(devlin): This should return SVGElement, but closure compiler is missing
+// those externs.
+/**
+ * Alias for document.getElementById. Found elements must be SVGElements.
+ * @param {string} id The ID of the element to find.
+ * @return {Element} The found element or null if not found.
+ */
+/* #export */ function getSVGElement(id) {
+  // Disable getElementById restriction here, since it is not suitable for SVG
+  // elements.
+  // eslint-disable-next-line no-restricted-properties
+  const el = document.getElementById(id);
+  return el ? assertInstanceof(el, Element) : null;
+}
+
+/**
+ * @return {?Element} The currently focused element (including elements that are
+ *     behind a shadow root), or null if nothing is focused.
+ */
+/* #export */ function getDeepActiveElement() {
+  let a = document.activeElement;
+  while (a && a.shadowRoot && a.shadowRoot.activeElement) {
+    a = a.shadowRoot.activeElement;
+  }
+  return a;
+}
+
+// 
+
+/**
+ * @param {Node} el A node to search for ancestors with |className|.
+ * @param {string} className A class to search for.
+ * @return {Element} A node with class of |className| or null if none is found.
+ */
+/* #export */ function findAncestorByClass(el, className) {
+  return /** @type {Element} */ (findAncestor(el, function(el) {
+    return el.classList && el.classList.contains(className);
+  }));
+}
+
+/**
+ * Return the first ancestor for which the {@code predicate} returns true.
+ * @param {Node} node The node to check.
+ * @param {function(Node):boolean} predicate The function that tests the
+ *     nodes.
+ * @param {boolean=} includeShadowHosts
+ * @return {Node} The found ancestor or null if not found.
+ */
+/* #export */ function findAncestor(node, predicate, includeShadowHosts) {
+  while (node !== null) {
+    if (predicate(node)) {
+      break;
+    }
+    node = includeShadowHosts && node instanceof ShadowRoot ? node.host :
+                                                              node.parentNode;
+  }
+  return node;
+}
+
+/**
+ * Disables text selection and dragging, with optional callbacks to specify
+ * overrides.
+ * @param {function(Event):boolean=} opt_allowSelectStart Unless this function
+ *    is defined and returns true, the onselectionstart event will be
+ *    suppressed.
+ * @param {function(Event):boolean=} opt_allowDragStart Unless this function
+ *    is defined and returns true, the ondragstart event will be suppressed.
+ */
+/* #export */ function disableTextSelectAndDrag(
+    opt_allowSelectStart, opt_allowDragStart) {
+  // Disable text selection.
+  document.onselectstart = function(e) {
+    if (!(opt_allowSelectStart && opt_allowSelectStart.call(this, e))) {
+      e.preventDefault();
+    }
+  };
+
+  // Disable dragging.
+  document.ondragstart = function(e) {
+    if (!(opt_allowDragStart && opt_allowDragStart.call(this, e))) {
+      e.preventDefault();
+    }
+  };
+}
+
+/**
+ * Check the directionality of the page.
+ * @return {boolean} True if Chrome is running an RTL UI.
+ */
+/* #export */ function isRTL() {
+  return document.documentElement.dir === 'rtl';
+}
+
+/**
+ * Get an element that's known to exist by its ID. We use this instead of just
+ * calling getElementById and not checking the result because this lets us
+ * satisfy the JSCompiler type system.
+ * @param {string} id The identifier name.
+ * @return {!HTMLElement} the Element.
+ */
+/* #export */ function getRequiredElement(id) {
+  return assertInstanceof(
+      $(id), HTMLElement, 'Missing required element: ' + id);
+}
+
+/**
+ * Query an element that's known to exist by a selector. We use this instead of
+ * just calling querySelector and not checking the result because this lets us
+ * satisfy the JSCompiler type system.
+ * @param {string} selectors CSS selectors to query the element.
+ * @param {(!Document|!DocumentFragment|!Element)=} opt_context An optional
+ *     context object for querySelector.
+ * @return {!HTMLElement} the Element.
+ */
+/* #export */ function queryRequiredElement(selectors, opt_context) {
+  const element = (opt_context || document).querySelector(selectors);
+  return assertInstanceof(
+      element, HTMLElement, 'Missing required element: ' + selectors);
+}
+
+/**
+ * Creates a new URL which is the old URL with a GET param of key=value.
+ * @param {string} url The base URL. There is not sanity checking on the URL so
+ *     it must be passed in a proper format.
+ * @param {string} key The key of the param.
+ * @param {string} value The value of the param.
+ * @return {string} The new URL.
+ */
+/* #export */ function appendParam(url, key, value) {
+  const param = encodeURIComponent(key) + '=' + encodeURIComponent(value);
+
+  if (url.indexOf('?') === -1) {
+    return url + '?' + param;
+  }
+  return url + '&' + param;
+}
+
+/**
+ * Creates an element of a specified type with a specified class name.
+ * @param {string} type The node type.
+ * @param {string} className The class name to use.
+ * @return {Element} The created element.
+ */
+/* #export */ function createElementWithClassName(type, className) {
+  const elm = document.createElement(type);
+  elm.className = className;
+  return elm;
+}
+
+/**
+ * transitionend does not always fire (e.g. when animation is aborted
+ * or when no paint happens during the animation). This function sets up
+ * a timer and emulate the event if it is not fired when the timer expires.
+ * @param {!HTMLElement} el The element to watch for transitionend.
+ * @param {number=} opt_timeOut The maximum wait time in milliseconds for the
+ *     transitionend to happen. If not specified, it is fetched from |el|
+ *     using the transitionDuration style value.
+ */
+/* #export */ function ensureTransitionEndEvent(el, opt_timeOut) {
+  if (opt_timeOut === undefined) {
+    const style = getComputedStyle(el);
+    opt_timeOut = parseFloat(style.transitionDuration) * 1000;
+
+    // Give an additional 50ms buffer for the animation to complete.
+    opt_timeOut += 50;
+  }
+
+  let fired = false;
+  el.addEventListener('transitionend', function f(e) {
+    el.removeEventListener('transitionend', f);
+    fired = true;
+  });
+  window.setTimeout(function() {
+    if (!fired) {
+      cr.dispatchSimpleEvent(el, 'transitionend', true);
+    }
+  }, opt_timeOut);
+}
+
+/**
+ * Alias for document.scrollTop getter.
+ * @param {!HTMLDocument} doc The document node where information will be
+ *     queried from.
+ * @return {number} The Y document scroll offset.
+ */
+/* #export */ function scrollTopForDocument(doc) {
+  return doc.documentElement.scrollTop || doc.body.scrollTop;
+}
+
+/**
+ * Alias for document.scrollTop setter.
+ * @param {!HTMLDocument} doc The document node where information will be
+ *     queried from.
+ * @param {number} value The target Y scroll offset.
+ */
+/* #export */ function setScrollTopForDocument(doc, value) {
+  doc.documentElement.scrollTop = doc.body.scrollTop = value;
+}
+
+/**
+ * Alias for document.scrollLeft getter.
+ * @param {!HTMLDocument} doc The document node where information will be
+ *     queried from.
+ * @return {number} The X document scroll offset.
+ */
+/* #export */ function scrollLeftForDocument(doc) {
+  return doc.documentElement.scrollLeft || doc.body.scrollLeft;
+}
+
+/**
+ * Alias for document.scrollLeft setter.
+ * @param {!HTMLDocument} doc The document node where information will be
+ *     queried from.
+ * @param {number} value The target X scroll offset.
+ */
+/* #export */ function setScrollLeftForDocument(doc, value) {
+  doc.documentElement.scrollLeft = doc.body.scrollLeft = value;
+}
+
+/**
+ * Replaces '&', '<', '>', '"', and ''' characters with their HTML encoding.
+ * @param {string} original The original string.
+ * @return {string} The string with all the characters mentioned above replaced.
+ */
+/* #export */ function HTMLEscape(original) {
+  return original.replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+}
+
+/**
+ * Shortens the provided string (if necessary) to a string of length at most
+ * |maxLength|.
+ * @param {string} original The original string.
+ * @param {number} maxLength The maximum length allowed for the string.
+ * @return {string} The original string if its length does not exceed
+ *     |maxLength|. Otherwise the first |maxLength| - 1 characters with '...'
+ *     appended.
+ */
+/* #export */ function elide(original, maxLength) {
+  if (original.length <= maxLength) {
+    return original;
+  }
+  return original.substring(0, maxLength - 1) + '\u2026';
+}
+
+/**
+ * Quote a string so it can be used in a regular expression.
+ * @param {string} str The source string.
+ * @return {string} The escaped string.
+ */
+/* #export */ function quoteString(str) {
+  return str.replace(/([\\\.\+\*\?\[\^\]\$\(\)\{\}\=\!\<\>\|\:])/g, '\\$1');
+}
+
+/**
+ * Calls |callback| and stops listening the first time any event in |eventNames|
+ * is triggered on |target|.
+ * @param {!EventTarget} target
+ * @param {!Array<string>|string} eventNames Array or space-delimited string of
+ *     event names to listen to (e.g. 'click mousedown').
+ * @param {function(!Event)} callback Called at most once. The
+ *     optional return value is passed on by the listener.
+ */
+/* #export */ function listenOnce(target, eventNames, callback) {
+  if (!Array.isArray(eventNames)) {
+    eventNames = eventNames.split(/ +/);
+  }
+
+  const removeAllAndCallCallback = function(event) {
+    eventNames.forEach(function(eventName) {
+      target.removeEventListener(eventName, removeAllAndCallCallback, false);
+    });
+    return callback(event);
+  };
+
+  eventNames.forEach(function(eventName) {
+    target.addEventListener(eventName, removeAllAndCallCallback, false);
+  });
+}
+
+/**
+ * @param {!Event} e
+ * @return {boolean} Whether a modifier key was down when processing |e|.
+ */
+/* #export */ function hasKeyModifiers(e) {
+  return !!(e.altKey || e.ctrlKey || e.metaKey || e.shiftKey);
+}
+
+/**
+ * @param {!Element} el
+ * @return {boolean} Whether the element is interactive via text input.
+ */
+/* #export */ function isTextInputElement(el) {
+  return el.tagName === 'INPUT' || el.tagName === 'TEXTAREA';
+}
+</script>
+  <script>// Copyright 2017 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+// This is the shared code for security interstitials. It is used for both SSL
+// interstitials and Safe Browsing interstitials.
+
+/**
+ * @typedef {{
+ *   dontProceed: function(),
+ *   proceed: function(),
+ *   showMoreSection: function(),
+ *   openHelpCenter: function(),
+ *   openDiagnostic: function(),
+ *   reload: function(),
+ *   openDateSettings: function(),
+ *   openLogin: function(),
+ *   doReport: function(),
+ *   dontReport: function(),
+ *   openReportingPrivacy: function(),
+ *   openWhitepaper: function(),
+ *   reportPhishingError: function(),
+ * }}
+ */
+// eslint-disable-next-line no-var
+var certificateErrorPageController;
+
+// Should match security_interstitials::SecurityInterstitialCommand
+/** @enum {number} */
+const SecurityInterstitialCommandId = {
+  CMD_DONT_PROCEED: 0,
+  CMD_PROCEED: 1,
+  // Ways for user to get more information
+  CMD_SHOW_MORE_SECTION: 2,
+  CMD_OPEN_HELP_CENTER: 3,
+  CMD_OPEN_DIAGNOSTIC: 4,
+  // Primary button actions
+  CMD_RELOAD: 5,
+  CMD_OPEN_DATE_SETTINGS: 6,
+  CMD_OPEN_LOGIN: 7,
+  // Safe Browsing Extended Reporting
+  CMD_DO_REPORT: 8,
+  CMD_DONT_REPORT: 9,
+  CMD_OPEN_REPORTING_PRIVACY: 10,
+  CMD_OPEN_WHITEPAPER: 11,
+  // Report a phishing error.
+  CMD_REPORT_PHISHING_ERROR: 12,
+  // Open enhanced protection settings.
+  CMD_OPEN_ENHANCED_PROTECTION_SETTINGS: 13,
+};
+
+const HIDDEN_CLASS = 'hidden';
+
+/**
+ * A convenience method for sending commands to the parent page.
+ * @param {SecurityInterstitialCommandId} cmd  The command to send.
+ */
+function sendCommand(cmd) {
+  if (window.certificateErrorPageController) {
+    switch (cmd) {
+      case SecurityInterstitialCommandId.CMD_DONT_PROCEED:
+        certificateErrorPageController.dontProceed();
+        break;
+      case SecurityInterstitialCommandId.CMD_PROCEED:
+        certificateErrorPageController.proceed();
+        break;
+      case SecurityInterstitialCommandId.CMD_SHOW_MORE_SECTION:
+        certificateErrorPageController.showMoreSection();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_HELP_CENTER:
+        certificateErrorPageController.openHelpCenter();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_DIAGNOSTIC:
+        certificateErrorPageController.openDiagnostic();
+        break;
+      case SecurityInterstitialCommandId.CMD_RELOAD:
+        certificateErrorPageController.reload();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_DATE_SETTINGS:
+        certificateErrorPageController.openDateSettings();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_LOGIN:
+        certificateErrorPageController.openLogin();
+        break;
+      case SecurityInterstitialCommandId.CMD_DO_REPORT:
+        certificateErrorPageController.doReport();
+        break;
+      case SecurityInterstitialCommandId.CMD_DONT_REPORT:
+        certificateErrorPageController.dontReport();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_REPORTING_PRIVACY:
+        certificateErrorPageController.openReportingPrivacy();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_WHITEPAPER:
+        certificateErrorPageController.openWhitepaper();
+        break;
+      case SecurityInterstitialCommandId.CMD_REPORT_PHISHING_ERROR:
+        certificateErrorPageController.reportPhishingError();
+        break;
+      case SecurityInterstitialCommandId.CMD_OPEN_ENHANCED_PROTECTION_SETTINGS:
+        certificateErrorPageController.openEnhancedProtectionSettings();
+        break;
+    }
+    return;
+  }
+  // 
+  window.domAutomationController.send(cmd);
+  // 
+  // 
+}
+
+/**
+ * Call this to stop clicks on <a href="#"> links from scrolling to the top of
+ * the page (and possibly showing a # in the link).
+ */
+function preventDefaultOnPoundLinkClicks() {
+  document.addEventListener('click', function(e) {
+    const anchor = findAncestor(/** @type {Node} */ (e.target), function(el) {
+      return el.tagName === 'A';
+    });
+    // Use getAttribute() to prevent URL normalization.
+    if (anchor && anchor.getAttribute('href') === '#') {
+      e.preventDefault();
+    }
+  });
+}
+
+// 
+
+// 
+</script>
+  <script>// Copyright 2017 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+/**
+ * Restores the interstitial content to the initial state if the window size
+ * switches to a small view.
+ */
+function onResize() {
+  const mediaQuery = '(max-height:11.25em) and (max-width:18.75em),' +
+       '(max-height:18.75em) and (max-width:11.25em),' +
+       '(max-height:5em), (max-width:5em)';
+
+  // Check for change in window size.
+  if (window.matchMedia(mediaQuery).matches) {
+    const hiddenDetails = $('details').classList.add(HIDDEN_CLASS);
+    $('main-content').classList.remove(HIDDEN_CLASS);
+    $('icon').setAttribute('aria-label', loadTimeData.getString('heading'));
+  } else {
+    $('icon').removeAttribute('aria-label');
+  }
+}
+
+function initPage() {
+  const isGiantWebView = loadTimeData.getBoolean('is_giant');
+  const interstitialType = loadTimeData.getString('type');
+  const safebrowsing = interstitialType === 'SAFEBROWSING';
+  const heavyAd = interstitialType === 'HEAVYAD';
+
+  document.body.className = isGiantWebView ? 'giant' : '';
+
+  if (heavyAd) {
+    document.body.classList.add('heavy-ad');
+  }
+
+  preventDefaultOnPoundLinkClicks();
+
+  $('details-link').addEventListener('click', function(event) {
+    const hiddenDetails = $('details').classList.toggle(HIDDEN_CLASS);
+    $('main-content').classList.toggle(HIDDEN_CLASS, !hiddenDetails);
+  });
+
+  if (safebrowsing) {
+    $('proceed-link').addEventListener('click', function(event) {
+      sendCommand(SecurityInterstitialCommandId.CMD_PROCEED);
+    });
+  }
+
+  window.addEventListener('resize', onResize);
+}
+
+document.addEventListener('DOMContentLoaded', initPage);
+</script>
+</head>
+<body id="body" marginwidth="0" marginheight="0" jstcache="0" class="heavy-ad">
+  <div class="interstitial-wrapper" jstcache="0">
+    <div id="main-content" jstcache="0">
+      <div id="icon" class="icon" jstcache="0"></div>
+      <div id="main-message" jstcache="0">
+        <h1 jstcache="0">
+          <span jstcache="0">Se ha retirado el anuncio.</span>
+          <a href="chrome-error://chromewebdata/#" id="details-link" jstcache="0">Detalles</a>
+        </h1>
+      </div>
+    </div>
+    <div id="details" class="hidden" jstcache="0">
+      <p jstcache="0">
+        Chrome ha retirado este anuncio porque consumía demasiados recursos de tu dispositivo.
+      </p>
+    </div>
+  </div>
+
+
+<script jstcache="0">// Copyright (c) 2012 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+/**
+ * @fileoverview This file defines a singleton which provides access to all data
+ * that is available as soon as the page's resources are loaded (before DOM
+ * content has finished loading). This data includes both localized strings and
+ * any data that is important to have ready from a very early stage (e.g. things
+ * that must be displayed right away).
+ *
+ * Note that loadTimeData is not guaranteed to be consistent between page
+ * refreshes (https://crbug.com/740629) and should not contain values that might
+ * change if the page is re-opened later.
+ */
+
+// #import {assert} from './assert.m.js';
+// #import {parseHtmlSubset} from './parse_html_subset.m.js';
+
+/**
+ * @typedef {{
+ *   substitutions: (!Array<string>|undefined),
+ *   attrs: (!Array<string>|undefined),
+ *   tags: (!Array<string>|undefined),
+ * }}
+ */
+/* #export */ let SanitizeInnerHtmlOpts;
+
+// eslint-disable-next-line no-var
+/* #export */ /** @type {!LoadTimeData} */ var loadTimeData;
+
+// Expose this type globally as a temporary work around until
+// https://github.com/google/closure-compiler/issues/544 is fixed.
+/** @constructor */
+function LoadTimeData(){}
+
+(function() {
+  'use strict';
+
+  LoadTimeData.prototype = {
+    /**
+     * Sets the backing object.
+     *
+     * Note that there is no getter for |data_| to discourage abuse of the form:
+     *
+     *     var value = loadTimeData.data()['key'];
+     *
+     * @param {Object} value The de-serialized page data.
+     */
+    set data(value) {
+      expect(!this.data_, 'Re-setting data.');
+      this.data_ = value;
+    },
+
+    /**
+     * Returns a JsEvalContext for |data_|.
+     * @returns {JsEvalContext}
+     */
+    createJsEvalContext() {
+      return new JsEvalContext(this.data_);
+    },
+
+    /**
+     * @param {string} id An ID of a value that might exist.
+     * @return {boolean} True if |id| is a key in the dictionary.
+     */
+    valueExists(id) {
+      return id in this.data_;
+    },
+
+    /**
+     * Fetches a value, expecting that it exists.
+     * @param {string} id The key that identifies the desired value.
+     * @return {*} The corresponding value.
+     */
+    getValue(id) {
+      expect(this.data_, 'No data. Did you remember to include strings.js?');
+      const value = this.data_[id];
+      expect(typeof value !== 'undefined', 'Could not find value for ' + id);
+      return value;
+    },
+
+    /**
+     * As above, but also makes sure that the value is a string.
+     * @param {string} id The key that identifies the desired string.
+     * @return {string} The corresponding string value.
+     */
+    getString(id) {
+      const value = this.getValue(id);
+      expectIsType(id, value, 'string');
+      return /** @type {string} */ (value);
+    },
+
+    /**
+     * Returns a formatted localized string where $1 to $9 are replaced by the
+     * second to the tenth argument.
+     * @param {string} id The ID of the string we want.
+     * @param {...(string|number)} var_args The extra values to include in the
+     *     formatted output.
+     * @return {string} The formatted string.
+     */
+    getStringF(id, var_args) {
+      const value = this.getString(id);
+      if (!value) {
+        return '';
+      }
+
+      const args = Array.prototype.slice.call(arguments);
+      args[0] = value;
+      return this.substituteString.apply(this, args);
+    },
+
+    /**
+     * Make a string safe for use with with Polymer bindings that are
+     * inner-h-t-m-l (or other innerHTML use).
+     * @param {string} rawString The unsanitized string.
+     * @param {SanitizeInnerHtmlOpts=} opts Optional additional allowed tags and
+     *     attributes.
+     * @return {string}
+     */
+    sanitizeInnerHtml(rawString, opts) {
+      opts = opts || {};
+      return parseHtmlSubset('<b>' + rawString + '</b>', opts.tags, opts.attrs)
+          .firstChild.innerHTML;
+    },
+
+    /**
+     * Returns a formatted localized string where $1 to $9 are replaced by the
+     * second to the tenth argument. Any standalone $ signs must be escaped as
+     * $$.
+     * @param {string} label The label to substitute through.
+     *     This is not an resource ID.
+     * @param {...(string|number)} var_args The extra values to include in the
+     *     formatted output.
+     * @return {string} The formatted string.
+     */
+    substituteString(label, var_args) {
+      const varArgs = arguments;
+      return label.replace(/\$(.|$|\n)/g, function(m) {
+        assert(m.match(/\$[$1-9]/), 'Unescaped $ found in localized string.');
+        return m === '$$' ? '$' : varArgs[m[1]];
+      });
+    },
+
+    /**
+     * Returns a formatted string where $1 to $9 are replaced by the second to
+     * tenth argument, split apart into a list of pieces describing how the
+     * substitution was performed. Any standalone $ signs must be escaped as $$.
+     * @param {string} label A localized string to substitute through.
+     *     This is not an resource ID.
+     * @param {...(string|number)} var_args The extra values to include in the
+     *     formatted output.
+     * @return {!Array<!{value: string, arg: (null|string)}>} The formatted
+     *     string pieces.
+     */
+    getSubstitutedStringPieces(label, var_args) {
+      const varArgs = arguments;
+      // Split the string by separately matching all occurrences of $1-9 and of
+      // non $1-9 pieces.
+      const pieces = (label.match(/(\$[1-9])|(([^$]|\$([^1-9]|$))+)/g) ||
+                      []).map(function(p) {
+        // Pieces that are not $1-9 should be returned after replacing $$
+        // with $.
+        if (!p.match(/^\$[1-9]$/)) {
+          assert(
+              (p.match(/\$/g) || []).length % 2 === 0,
+              'Unescaped $ found in localized string.');
+          return {value: p.replace(/\$\$/g, '$'), arg: null};
+        }
+
+        // Otherwise, return the substitution value.
+        return {value: varArgs[p[1]], arg: p};
+      });
+
+      return pieces;
+    },
+
+    /**
+     * As above, but also makes sure that the value is a boolean.
+     * @param {string} id The key that identifies the desired boolean.
+     * @return {boolean} The corresponding boolean value.
+     */
+    getBoolean(id) {
+      const value = this.getValue(id);
+      expectIsType(id, value, 'boolean');
+      return /** @type {boolean} */ (value);
+    },
+
+    /**
+     * As above, but also makes sure that the value is an integer.
+     * @param {string} id The key that identifies the desired number.
+     * @return {number} The corresponding number value.
+     */
+    getInteger(id) {
+      const value = this.getValue(id);
+      expectIsType(id, value, 'number');
+      expect(value === Math.floor(value), 'Number isn\'t integer: ' + value);
+      return /** @type {number} */ (value);
+    },
+
+    /**
+     * Override values in loadTimeData with the values found in |replacements|.
+     * @param {Object} replacements The dictionary object of keys to replace.
+     */
+    overrideValues(replacements) {
+      expect(
+          typeof replacements === 'object',
+          'Replacements must be a dictionary object.');
+      for (const key in replacements) {
+        this.data_[key] = replacements[key];
+      }
+    }
+  };
+
+  /**
+   * Checks condition, displays error message if expectation fails.
+   * @param {*} condition The condition to check for truthiness.
+   * @param {string} message The message to display if the check fails.
+   */
+  function expect(condition, message) {
+    if (!condition) {
+      console.error(
+          'Unexpected condition on ' + document.location.href + ': ' + message);
+    }
+  }
+
+  /**
+   * Checks that the given value has the given type.
+   * @param {string} id The id of the value (only used for error message).
+   * @param {*} value The value to check the type on.
+   * @param {string} type The type we expect |value| to be.
+   */
+  function expectIsType(id, value, type) {
+    expect(
+        typeof value === type, '[' + value + '] (' + id + ') is not a ' + type);
+  }
+
+  expect(!loadTimeData, 'should only include this file once');
+  loadTimeData = new LoadTimeData;
+
+  // Expose |loadTimeData| directly on |window|. This is only necessary by the
+  // auto-generated load_time_data.m.js, since within a JS module the scope is
+  // local.
+  window.loadTimeData = loadTimeData;
+})();
+</script><script jstcache="0">loadTimeData.data = {"explanationParagraph":"Chrome ha retirado este anuncio porque consumía demasiados recursos de tu dispositivo.","fontfamily":"'Segoe UI', Tahoma, sans-serif","fontsize":"75%","heading":"Se ha retirado el anuncio.","is_giant":false,"language":"es","openDetails":"Detalles","overridable":false,"tabTitle":"","textdirection":"ltr","type":"HEAVYAD"};</script><script jstcache="0">(function(){function l(a,b,c){return Function.prototype.call.apply(Array.prototype.slice,arguments)}function m(a,b,c){var e=l(arguments,2);return function(){return b.apply(a,e)}}function n(a,b){var c=new p(b);for(c.h=[a];c.h.length;){var e=c,d=c.h.shift();e.i(d);for(d=d.firstChild;d;d=d.nextSibling)1==d.nodeType&&e.h.push(d)}}function p(a){this.i=a}function q(a){a.style.display=""}function r(a){a.style.display="none"};var t=/\s*;\s*/;function u(a,b){this.l.apply(this,arguments)}u.prototype.l=function(a,b){this.a||(this.a={});if(b){var c=this.a,e=b.a;for(d in e)c[d]=e[d]}else{var d=this.a;e=v;for(c in e)d[c]=e[c]}this.a.$this=a;this.a.$context=this;this.f="undefined"!=typeof a&&null!=a?a:"";b||(this.a.$top=this.f)};var v={$default:null},w=[];function x(a){for(var b in a.a)delete a.a[b];a.f=null;w.push(a)}function y(a,b,c){try{return b.call(c,a.a,a.f)}catch(e){return v.$default}}
+u.prototype.clone=function(a,b,c){if(0<w.length){var e=w.pop();u.call(e,a,this);a=e}else a=new u(a,this);a.a.$index=b;a.a.$count=c;return a};var z;window.trustedTypes&&(z=trustedTypes.createPolicy("jstemplate",{createScript:function(a){return a}}));var A={};function B(a){if(!A[a])try{var b="(function(a_, b_) { with (a_) with (b_) return "+a+" })",c=window.trustedTypes?z.createScript(b):b;A[a]=window.eval(c)}catch(e){}return A[a]}
+function E(a){var b=[];a=a.split(t);for(var c=0,e=a.length;c<e;++c){var d=a[c].indexOf(":");if(!(0>d)){var g=a[c].substr(0,d).replace(/^\s+/,"").replace(/\s+$/,"");d=B(a[c].substr(d+1));b.push(g,d)}}return b};function F(){}var G=0,H={0:{}},I={},J={},K=[];function L(a){a.__jstcache||n(a,function(b){M(b)})}var N=[["jsselect",B],["jsdisplay",B],["jsvalues",E],["jsvars",E],["jseval",function(a){var b=[];a=a.split(t);for(var c=0,e=a.length;c<e;++c)if(a[c]){var d=B(a[c]);b.push(d)}return b}],["transclude",function(a){return a}],["jscontent",B],["jsskip",B]];
+function M(a){if(a.__jstcache)return a.__jstcache;var b=a.getAttribute("jstcache");if(null!=b)return a.__jstcache=H[b];b=K.length=0;for(var c=N.length;b<c;++b){var e=N[b][0],d=a.getAttribute(e);J[e]=d;null!=d&&K.push(e+"="+d)}if(0==K.length)return a.setAttribute("jstcache","0"),a.__jstcache=H[0];var g=K.join("&");if(b=I[g])return a.setAttribute("jstcache",b),a.__jstcache=H[b];var h={};b=0;for(c=N.length;b<c;++b){d=N[b];e=d[0];var f=d[1];d=J[e];null!=d&&(h[e]=f(d))}b=""+ ++G;a.setAttribute("jstcache",
+b);H[b]=h;I[g]=b;return a.__jstcache=h}function P(a,b){a.j.push(b);a.o.push(0)}function Q(a){return a.c.length?a.c.pop():[]}
+F.prototype.g=function(a,b){var c=R(b),e=c.transclude;if(e)(c=S(e))?(b.parentNode.replaceChild(c,b),e=Q(this),e.push(this.g,a,c),P(this,e)):b.parentNode.removeChild(b);else if(c=c.jsselect){c=y(a,c,b);var d=b.getAttribute("jsinstance");var g=!1;d&&("*"==d.charAt(0)?(d=parseInt(d.substr(1),10),g=!0):d=parseInt(d,10));var h=null!=c&&"object"==typeof c&&"number"==typeof c.length;e=h?c.length:1;var f=h&&0==e;if(h)if(f)d?b.parentNode.removeChild(b):(b.setAttribute("jsinstance","*0"),r(b));else if(q(b),
+null===d||""===d||g&&d<e-1){g=Q(this);d=d||0;for(h=e-1;d<h;++d){var k=b.cloneNode(!0);b.parentNode.insertBefore(k,b);T(k,c,d);f=a.clone(c[d],d,e);g.push(this.b,f,k,x,f,null)}T(b,c,d);f=a.clone(c[d],d,e);g.push(this.b,f,b,x,f,null);P(this,g)}else d<e?(g=c[d],T(b,c,d),f=a.clone(g,d,e),g=Q(this),g.push(this.b,f,b,x,f,null),P(this,g)):b.parentNode.removeChild(b);else null==c?r(b):(q(b),f=a.clone(c,0,1),g=Q(this),g.push(this.b,f,b,x,f,null),P(this,g))}else this.b(a,b)};
+F.prototype.b=function(a,b){var c=R(b),e=c.jsdisplay;if(e){if(!y(a,e,b)){r(b);return}q(b)}if(e=c.jsvars)for(var d=0,g=e.length;d<g;d+=2){var h=e[d],f=y(a,e[d+1],b);a.a[h]=f}if(e=c.jsvalues)for(d=0,g=e.length;d<g;d+=2)if(f=e[d],h=y(a,e[d+1],b),"$"==f.charAt(0))a.a[f]=h;else if("."==f.charAt(0)){f=f.substr(1).split(".");for(var k=b,O=f.length,C=0,U=O-1;C<U;++C){var D=f[C];k[D]||(k[D]={});k=k[D]}k[f[O-1]]=h}else f&&("boolean"==typeof h?h?b.setAttribute(f,f):b.removeAttribute(f):b.setAttribute(f,""+h));
+if(e=c.jseval)for(d=0,g=e.length;d<g;++d)y(a,e[d],b);e=c.jsskip;if(!e||!y(a,e,b))if(c=c.jscontent){if(c=""+y(a,c,b),b.innerHTML!=c){for(;b.firstChild;)e=b.firstChild,e.parentNode.removeChild(e);b.appendChild(this.m.createTextNode(c))}}else{c=Q(this);for(e=b.firstChild;e;e=e.nextSibling)1==e.nodeType&&c.push(this.g,a,e);c.length&&P(this,c)}};function R(a){if(a.__jstcache)return a.__jstcache;var b=a.getAttribute("jstcache");return b?a.__jstcache=H[b]:M(a)}
+function S(a,b){var c=document;if(b){var e=c.getElementById(a);if(!e){e=b();var d=c.getElementById("jsts");d||(d=c.createElement("div"),d.id="jsts",r(d),d.style.position="absolute",c.body.appendChild(d));var g=c.createElement("div");d.appendChild(g);g.innerHTML=e;e=c.getElementById(a)}c=e}else c=c.getElementById(a);return c?(L(c),c=c.cloneNode(!0),c.removeAttribute("id"),c):null}function T(a,b,c){c==b.length-1?a.setAttribute("jsinstance","*"+c):a.setAttribute("jsinstance",""+c)};window.jstGetTemplate=S;window.JsEvalContext=u;window.jstProcess=function(a,b){var c=new F;L(b);c.m=b?9==b.nodeType?b:b.ownerDocument||document:document;var e=m(c,c.g,a,b),d=c.j=[],g=c.o=[];c.c=[];e();for(var h,f,k;d.length;)h=d[d.length-1],e=g[g.length-1],e>=h.length?(e=c,f=d.pop(),f.length=0,e.c.push(f),g.pop()):(f=h[e++],k=h[e++],h=h[e++],g[g.length-1]=e,f.call(c,k,h))};
+})()</script><script jstcache="0">var tp = document.getElementById('body');jstProcess(loadTimeData.createJsEvalContext(), tp);</script><style>/* Copyright 2014 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+/* This file is dynamically processed by a C++ data source handler to fill in
+ * some per-platform/locale styles that dramatically alter the page. This is
+ * done to reduce flicker, as JS may not run before the page is rendered.
+ *
+ * There are two ways to include this stylesheet:
+ * 1. via its chrome://resources/ URL in HTML, i.e.:
+ *
+ *   <link rel="stylesheet" href="chrome://resources/css/text_defaults.css">
+ *
+ * 2. via the webui::AppendWebUICSSTextDefaults() method to directly append it
+ * to an HTML string.
+ * Otherwise its placeholders won't be expanded. */
+
+html {
+  /* TODO(dbeam): remove this soon. Prefer dir= in HTML. */
+  direction: ltr;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 75%;
+}
+
+button {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+</style></body></html>
