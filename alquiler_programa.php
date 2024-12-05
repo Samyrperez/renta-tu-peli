@@ -24,6 +24,6 @@ if ($guardar) {
  else {
   echo '<script type="text/javascript">alert("Error al registrar");</script>';
   header("refresh:1; url=alquiler.php");
- }
+}
  
  ?>
